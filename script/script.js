@@ -41,7 +41,6 @@ TodoList.forEach((toDo) => {
   list.appendChild(selectItem);
 });
 
-// // Functie om te filteren op "alles", "actief" of "gedaan"
 // function filterWinkels() {
 //   const optie = filter.value; // Haal gekozen filteroptie op
 //   const alleTaken = takenLijst.querySelectorAll("li"); // Alle <li>'s ophalen
