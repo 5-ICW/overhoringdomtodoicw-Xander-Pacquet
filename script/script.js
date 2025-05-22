@@ -41,6 +41,30 @@ TodoList.forEach((toDo) => {
   list.appendChild(selectItem);
 });
 
+// // Functie om te filteren op "alles", "actief" of "gedaan"
+// function filterWinkels() {
+//   const optie = filter.value; // Haal gekozen filteroptie op
+//   const alleTaken = takenLijst.querySelectorAll("li"); // Alle <li>'s ophalen
+
+//   alleTaken.forEach((taak) => {
+//     const checkbox = taak.querySelector('input[type="checkbox"]'); // Zoek de checkbox binnen de taak
+
+//     // Bepaal of de taak zichtbaar moet zijn op basis van de filter
+//     if (optie === "aldi") {
+//       return `${list}["aldi"]`;
+//     }
+//     if (optie === "carefour") {
+//       return `${list}["carefour"]`;
+//     }
+//     if (optie === "okay") {
+//       return `${list}["okay"]`;
+//     }
+//   });
+//   if (optie === "lidl") {
+//     return `${list}["lidl"]`;
+//   }
+// }
+
 // TodoList.forEach((toDo) => {
 //   const selectItem = document.createElement("li");
 //   selectItem.value = toDo.id;
