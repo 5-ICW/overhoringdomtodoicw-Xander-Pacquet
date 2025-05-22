@@ -32,26 +32,30 @@ form.addEventListener("submit", function (e) {
 });
 
 TodoList.forEach((toDo) => {
-  const selectItem = document.createElement("option");
+  const selectItem = document.createElement("li");
   selectItem.value = toDo.id;
   selectItem.innerHTML = toDo.title;
+  selectItem.addEventListener("click", function () {
+    selectItem.classList.toggle("completed");
+  });
   list.appendChild(selectItem);
 });
 
-const dropdown = document.querySelector("#winkels");
-
-dropdown.addEventListener("change", () => {
-  document.body.style.backgroundColor = dropdown.value;
-});
-
-function showTaken(TodoList, htmlElement) {
-  htmlElement.innerHTML = "";
-  TodoList.forEach((user) => {
-    let newToDo = document.createElement("li");
-    newToDo.innerHTML = user.title;
-    if (TaakGedaan(title)) {
-      newToDo.classList.add("dubbelUser");
-    }
-    htmlElement.appendChild(newUserLi);
-  });
-}
+// TodoList.forEach((toDo) => {
+//   const selectItem = document.createElement("li");
+//   selectItem.value = toDo.id;
+//   selectItem.innerHTML = toDo.title;
+//   selectItem.addEventListener("click", function () {
+//     selectItem.classList.toggle("completed");
+//   });
+//   list.appendChild(selectItem);
+//   if (text == "") {
+//     const li = document.createElement("li");
+//     li.textContent = text;
+//     li.addEventListener("click", function () {
+//       li.classList.toggle("completed");
+//     });
+//     list.appendChild(li);
+//     input.value = "";
+//   }
+// });
